@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Surevy Form</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+</head>
+<body>
+    <h1 id="title">
+        freeCode Camp Survey Form
+    </h1>
+    <p id="description">
+        Thank you for taking the time to help us improve the platform
+    </p>
+    <center>
+        <form id="survey-form">
+            <label id="name-label">Enter Name</label>
+            <input id="name" type="text" required placeholder="  Name"><br>
+            <label id="email-label">Enter mail</label>
+            <input id="email" type="email" required placeholder="  Mail"><br>
+            <label id="number-label">Enter age</label>
+            <input id="number" type="number" required min="1" max="8" placeholder="  Age">
+            <p class="red">
+                Role??
+            </p>
+            <select id="dropdown">
+                <option hidden="hidden">Please Choose Option</option>
+                <option>Student</option>
+                <option>Jober</option>
+                <option>Others</option>
+            </select>
+            <p id="rec">
+                Would you recommend freeCodeCamp to a friend?
+            </p>
+            <label class="recommend">
+                <input type="radio" value="Value" name="radio-button" class="radiobtn" checked> Yes
+            </label>
+            <label class="recommend">
+                <input type="radio" value="Value" name="radio-button" class="radiobtn"> No
+            </label>
+            <label class="recommend">
+                <input type="radio" value="Value" name="radio-button" class="radiobtn"> Prefer not to say
+            </label>
+    
+            <p id="know" class="red">
+                What you Know?
+            </p>
+            <label class="recommend">
+                <input type="checkbox" value="Value" class="checkbx"> Html
+            </label>
+            <label class="recommend">
+            <input type="checkbox" value="Value" class="checkbx"> Css
+            </label>
+            <label class="recommend">
+            <input type="checkbox" value="Value" class="checkbx"> Java Script
+            </label>
+            <label class="recommend">
+            <input type="checkbox" value="Value" class="checkbx"> Python
+            </label>
+            <label class="recommend">
+            <input type="checkbox" value="Value" class="checkbx"> C#
+            </label>
+            <label class="recommend">
+            <input type="checkbox" value="Value" class="checkbx1">None of the above
+            </label>
+            <p id="comment" class="red">
+                Any comments ?
+            </p>
+            <textarea cols="50" rows="5" id="text-area"> Enter Your comment here...</textarea>
+    
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </center>
+</body>
+</html>
