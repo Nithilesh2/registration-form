@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* text-align: center; */
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+}
+
+#title{
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    opacity: calc(80%);
+}
+
+#description{
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    opacity: calc(80%);
+}
+
+#survey-form{
+    border: 1px solid black;
+    margin-top: 20px;
+    /* margin-left: 28%; */
+    padding: 20px;
+    height: 90%;
+    width: fit-content;
+    background-color: rgba(62, 62, 62,0.22);
+    opacity: calc(95%);
+}
+
+#name-label{
+    display: flex;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: light;
+    opacity: calc(90%);
+    text-align: start;
+}
+
+#name{
+    margin: 8px 0;
+    height: 5vh;
+    width: 100%;
+    border-radius: 4px;
+    font-size: medium;
+    text-align: start;
+}
+
+#email-label{
+    display: flex;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: light;
+    opacity: calc(90%);
+}
+
+#email{
+    margin: 8px 0;
+    height: 5vh;
+    width: 100%;
+    border-radius: 4px;
+    font-size: medium;
+    text-align: start;
+}
+
+#number-label{
+    display: flex;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: light;
+    opacity: calc(90%);
+}
+
+#number{
+    margin: 8px 0;
+    height: 5vh;
+    width: 100%;
+    border-radius: 4px;
+    font-size: medium;
+    text-align: start;
+}
+
+p{
+    
+    color: white;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: light;
+    opacity: calc(90%);
+}
+
+.red{
+    display: flex;
+}
+
+#dropdown{
+    margin: 8px 0;
+    height: 5vh;
+    width: 100%;
+    border-radius: 4px;
+    font-size: medium;
+    text-align: start;
+}
+
+#rec{
+    padding: 11px 0;
+}
+
+.recommend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: rgb(222, 222, 222);
+}
+
+.radiobtn{
+    display: inline-block;
+    min-height: 1.1rem;
+    min-width: 1.1rem;
+    margin-right: 0.625rem;
+}
+
+input{
+    margin: 0;
+    line-height: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#know{
+    padding: 15px 0 15px 0;
+    color: rgb(245, 245, 245);
+}
+
+.checkbx,.checkbx1{
+    display: inline-block;
+    min-height: 1.1rem;
+    min-width: 1.1rem;
+    margin-right: 0.625rem;
+}
+
+#comment{
+    padding: 20px 0;
+}
+
+#submit{
+    display: flex;
+    height: 6vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 175, 0);
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    border-radius: 9px;
+}
