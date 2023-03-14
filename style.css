@@ -169,6 +169,10 @@ input{
     padding: 20px 0;
 }
 
+#text-area{
+    border-radius: 5px;
+}
+
 button{
     position: relative;
     top: 17px;
