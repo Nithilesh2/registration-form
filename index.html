@@ -18,11 +18,11 @@
     <center>
         <form id="survey-form">
             <label id="name-label">Enter Name</label>
-            <input id="name" type="text" required placeholder="  Name"><br>
+            <input id="name" type="text" required placeholder="Name"><br>
             <label id="email-label">Enter mail</label>
-            <input id="email" type="email" required placeholder="  Mail"><br>
+            <input id="email" type="email" required placeholder="Mail"><br>
             <label id="number-label">Enter age</label>
-            <input id="number" type="number" required min="1" max="10000000" placeholder="  Age">
+            <input id="number" type="number" required min="1" max="10000" placeholder="Age">
             <p class="red">
                 Role??
             </p>
@@ -49,30 +49,54 @@
                 What you Know?
             </p>
             <label class="recommend">
-                <input type="checkbox" value="Value" class="checkbx"> Html
+                <input type="checkbox" name="Value" class="checkbx"> Html
             </label>
             <label class="recommend">
-            <input type="checkbox" value="Value" class="checkbx"> Css
+                <input type="checkbox" name="Value" class="checkbx"> Css
             </label>
             <label class="recommend">
-            <input type="checkbox" value="Value" class="checkbx"> Java Script
+                <input type="checkbox" name="Value" class="checkbx"> Java Script
             </label>
             <label class="recommend">
-            <input type="checkbox" value="Value" class="checkbx"> Python
+                <input type="checkbox" name="Value" class="checkbx"> Python
             </label>
             <label class="recommend">
-            <input type="checkbox" value="Value" class="checkbx"> C#
+                <input type="checkbox" name="Value" class="checkbx"> C#
             </label>
             <label class="recommend">
-            <input type="checkbox" value="Value" class="checkbx1">None of the above
+                <input type="radio" name="no" class="checkbx1" onclick="selectAll()"> All of the Above
+            </label>
+            <label class="recommend">
+                <input type="radio" name="no" class="checkbx1" onclick="deSelectAll()">None of the Above
             </label>
             <p id="comment" class="red">
                 Any comments ?
             </p>
-            <textarea cols="50" rows="5" id="text-area"> Enter Your comment here...</textarea>
+            <textarea cols="50" rows="5" id="text-area" placeholder="Enter Your Comment here"></textarea>
     
             <button type="submit" id="submit">Submit</button>
         </form>
     </center>
+
+
+    <script>
+        // Java Script for unselect all
+        function deSelectAll(){
+            let unsel = document.getElementsByName('Value');
+            let len = unsel.length;
+            for(var i=0;i<len;i++){
+                unsel[i].checked = false;
+            }
+        }
+
+        //JS for select all
+        function selectAll(){
+            let sel = document.getElementsByName('Value');
+            let len = sel.length;
+            for(let i=0;i<len;i++){
+                sel[i].checked = true;
+            }
+        }
+    </script>
 </body>
 </html>
