@@ -158,7 +158,14 @@ input{
     color: rgb(245, 245, 245);
 }
 
-.checkbx,.checkbx1{
+.checkbx{
+    display: inline-block;
+    min-height: 1.1rem;
+    min-width: 1.1rem;
+    margin-right: 0.625rem;
+}
+
+.checkbx1{
     display: inline-block;
     min-height: 1.1rem;
     min-width: 1.1rem;
@@ -171,6 +178,8 @@ input{
 
 #text-area{
     border-radius: 5px;
+    padding-left: 5px;
+    padding-top: 3px;
 }
 
 button{
