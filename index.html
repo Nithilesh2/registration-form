@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Survey Form</title>
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <!-- <script src="./index.js"></script> -->
 </head>
 <body>
     <h1 id="title">
@@ -16,13 +17,18 @@
         Thank you for taking the time to help us improve the platform
     </p>
     <center>
-        <form id="survey-form">
+        <form id="survey-form" action="https://script.google.com/macros/s/AKfycby8W--so68dvPNHqRRn8QTSQ1nSkPObRhs0fnVDqhD07uMgfpdW1elNeS70aJP_-tWk/exec" name="submit-to-google-sheet" method="post">
             <label id="name-label">Enter Name</label>
-            <input id="name" type="text" required placeholder="Name"><br>
+            <input id="name" type="text" required placeholder="Name" name="name"><br>
+
             <label id="email-label">Enter mail</label>
-            <input id="email" type="email" required placeholder="Mail"><br>
+            <input id="email" type="email" required placeholder="Mail" name="mail"><br>
+
+            <label id="mobile-label">Enter mobile number</label>
+            <input id="mobile" type="text" required placeholder="Mobile number" name="mobile"><br>
+            
             <label id="number-label">Enter age</label>
-            <input id="number" type="number" required min="1" max="10000" placeholder="Age">
+            <input id="number" type="number" required min="1" max="10000" placeholder="Age" name="age">
             <p class="red">
                 Role??
             </p>
@@ -72,9 +78,9 @@
             <p id="comment" class="red">
                 Any comments ?
             </p>
-            <textarea cols="50" rows="5" id="text-area" placeholder="Enter Your Comment here"></textarea>
+            <textarea cols="50" rows="5" id="text-area" name="comments" placeholder="Enter Your Comment here"></textarea>
     
-            <button type="submit" id="submit">Submit</button>
+            <button type="submit" id="submit" name="submit">Submit</button>
         </form>
     </center>
 
