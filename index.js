@@ -4,7 +4,6 @@
   const form1 = document.forms['submit-to-google-sheet']
 
   form.addEventListener('submit', e => {
-    e.preventDefault()
     onSubmit={(e)=>e.preventDefault()}
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => alert("form subbmitted successfully....!"))
